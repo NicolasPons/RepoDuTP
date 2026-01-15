@@ -1,0 +1,6 @@
+Liste l'historique des commits : git log --oneline -> Permet de lister l'historique des commits avec leur hash. 
+
+Afficher les détails du deuxième commit : git show hash ->  Permet de voir l'auteur, la date le nom du commit, le fichier modifié et les modifications 
+
+Comparer deux versions du fichiers entre deux commits : git diff hash1 hash2 -> Permet de voir les modifications faites entre deux commits 
+
