@@ -1,0 +1,10 @@
+1 - Qu'as tu appris pendant ce TP ? 
+J'ai appris à annuler un ancien commit avec git revert et à revenir à l'état suivant un commit tout en conservant son fichier avec git resset - soft et git push --force-with-lease 
+
+2 - Quelle commande Git as-tu trouvé la plus utile et pourquoi ?
+ Une commande qui m'a été utile est git status et git log --oneline. La première afin de vérifier le stage de mes modifications et ainsi faire les actions en conséquences : add, commit ou push. 
+Et la seconde pour vérifier l'historique de mes commits après avoir push. 
+De plus, ces deux commandes et stash sont des commandes que j'utilise fréquemment dans le cadre de mon alternance et je les trouve très utiles
+
+3 - Quelle partie t'a posé le plus de difficulté ? 
+L'étape 6 car j'ai eu un conflit à résoudre étant donné que le fait de revert le chapitre 2 impacte le fichier histoire.txt qui est lui même utilisé pour le chapitre 3. J'ai donc du résoudre le conflit avant de pouvoir push

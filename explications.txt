@@ -4,3 +4,10 @@ Afficher les détails du deuxième commit : git show hash ->  Permet de voir l'a
 
 Comparer deux versions du fichiers entre deux commits : git diff hash1 hash2 -> Permet de voir les modifications faites entre deux commits 
 
+Corriger le dernier commit : git --amend -> Modifier ensuite le nom dans l'éditeur et valider le changement 
+
+Revenir en arrière : git reset -soft hash -> On récupère le hash du commit via log --oneline, on reset. Ensuite, on fait git status on voit que nos modifications sont prêtes à être commit, on refait le commit avec un nouveau nom et on push avec --force-with-lease car le dépôt distant a l'ancien commit et refuse d'écraser l'historique sans confirmation explicite de notre part. 
+
+Annuler un ancien commit proprement : git revert hash -> On récupère le hash du commit puis on le revert. Ensuite, j'ai dû résoudre un conflit car la suppression du chapitre 2 impacte le même fichier que le commit du chapitre 3. 
+
+
